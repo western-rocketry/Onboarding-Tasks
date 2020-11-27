@@ -21,7 +21,8 @@ def simpleSensor_Function():
     
     if simpleCounter >= 302:
         raise Exception("It appears we've turned this rocket into a lawn dart! MISSION FAILED")
-
+    
+    sleep(0.1)
     return dataValue
 
 
@@ -41,7 +42,8 @@ def noisySensor_Function():
     
     if noisyCounter >= 302:
         raise Exception("It appears we've turned this rocket into a lawn dart! MISSION FAILED")
-
+        
+    sleep(0.1)
     return dataSet
 
 
@@ -52,7 +54,7 @@ def user_Function():
         
         print(simpleSensor_Function(), "   Counter: ", simpleCounter)
         print(noisySensor_Function(), "    Counter: ", noisyCounter, "\n")
-        sleep(0.1)
+        
 
 
 user_Function()
